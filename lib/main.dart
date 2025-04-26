@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
   Widget calculadoraWidget(BuildContext context) {
     const double size01 = 20.0;
     const double size02 = 25.0;
+    const double borderRadiusSize = 12.0;
 
     return Expanded(
         child: Column(
@@ -33,14 +34,18 @@ class MyApp extends StatelessWidget {
         // Pantalla de la calculadora
         Expanded(
             child: Container(
-                color: const Color.fromARGB(255, 253, 253, 253),
+                margin: const EdgeInsets.all(4.0),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 253, 253, 253),
+                  borderRadius: BorderRadius.circular(borderRadiusSize),
+                ),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: const <Widget>[
                       Padding(
                           padding: EdgeInsets.all(20.0),
-                          child: Text("",
+                          child: Text("0",
                               style: TextStyle(
                                   fontSize: 48.0,
                                   fontWeight: FontWeight.bold,
@@ -52,7 +57,11 @@ class MyApp extends StatelessWidget {
             child: Row(children: <Widget>[
           Expanded(
               child: Container(
-                  color: Colors.blue[200],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[200],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("7",
                           style: TextStyle(
@@ -60,7 +69,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color:  const Color.fromARGB(255, 20, 149, 255),
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 20, 149, 255),
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("8",
                           style: TextStyle(
@@ -68,7 +81,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: Colors.blue[200],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[200],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("9",
                           style: TextStyle(
@@ -76,7 +93,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: const Color.fromARGB(255, 247, 81, 15),
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 247, 81, 15),
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("÷",
                           style: TextStyle(
@@ -89,7 +110,11 @@ class MyApp extends StatelessWidget {
             child: Row(children: <Widget>[
           Expanded(
               child: Container(
-                  color: const Color.fromARGB(255, 20, 149, 255),
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 20, 149, 255),
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("4",
                           style: TextStyle(
@@ -97,7 +122,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: Colors.blue[200],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[200],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("5",
                           style: TextStyle(
@@ -105,7 +134,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color:  const Color.fromARGB(255, 20, 149, 255),
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 20, 149, 255),
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("6",
                           style: TextStyle(
@@ -113,7 +146,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: const Color.fromARGB(255, 1, 150, 13),
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 1, 150, 13),
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("×",
                           style: TextStyle(
@@ -126,7 +163,11 @@ class MyApp extends StatelessWidget {
             child: Row(children: <Widget>[
           Expanded(
               child: Container(
-                  color: Colors.blue[200],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[200],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("1",
                           style: TextStyle(
@@ -134,7 +175,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: const Color.fromARGB(255, 20, 149, 255),
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 20, 149, 255),
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("2",
                           style: TextStyle(
@@ -142,7 +187,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: Colors.blue[200],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[200],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("3",
                           style: TextStyle(
@@ -150,7 +199,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: Colors.blue[400],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[400],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("-",
                           style: TextStyle(
@@ -163,7 +216,11 @@ class MyApp extends StatelessWidget {
             child: Row(children: <Widget>[
           Expanded(
               child: Container(
-                  color: Colors.blue[400],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[400],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("C",
                           style: TextStyle(
@@ -171,7 +228,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: Colors.blue[200],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[200],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("0",
                           style: TextStyle(
@@ -179,7 +240,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: Colors.blue[700],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[700],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("=",
                           style: TextStyle(
@@ -188,7 +253,11 @@ class MyApp extends StatelessWidget {
                               fontWeight: FontWeight.bold))))),
           Expanded(
               child: Container(
-                  color: Colors.blue[400],
+                  margin: const EdgeInsets.all(4.0),
+                  decoration: BoxDecoration(
+                    color: Colors.blue[400],
+                    borderRadius: BorderRadius.circular(borderRadiusSize),
+                  ),
                   child: const Center(
                       child: Text("+",
                           style: TextStyle(
@@ -199,7 +268,11 @@ class MyApp extends StatelessWidget {
         // Texto inferior
         Expanded(
             child: Container(
-                color: Colors.blue[900],
+                margin: const EdgeInsets.all(4.0),
+                decoration: BoxDecoration(
+                  color: Colors.blue[900],
+                  borderRadius: BorderRadius.circular(borderRadiusSize),
+                ),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const <Widget>[
